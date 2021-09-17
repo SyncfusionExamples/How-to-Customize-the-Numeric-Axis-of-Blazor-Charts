@@ -1,0 +1,39 @@
+﻿@page "/"
+
+<SfChart Title="England vs West Indies">
+    <ChartSeriesCollection>
+        <ChartPrimaryXAxis Maximum="21" Title="Death Over" EdgeLabelPlacement="EdgeLabelPlacement.Shift"
+                           Minimum="15" Interval="1" LabelFormat="{value}th Over"
+                           ValueType="Syncfusion.Blazor.Charts.ValueType.Double"
+                           RangePadding="ChartRangePadding.Additional">
+        </ChartPrimaryXAxis>
+        <ChartPrimaryYAxis Title="Runs"></ChartPrimaryYAxis>
+        <ChartSeries Type="ChartSeriesType.Column" DataSource="@ChartData"
+                     XName="Overs" YName="EnglandRunScore">
+        </ChartSeries>
+        <ChartSeries Type="ChartSeriesType.Column" DataSource="@ChartData"
+                     XName="Overs" YName="WestIndiesRunScore">
+        </ChartSeries>
+    </ChartSeriesCollection>
+</SfChart>
+
+@code
+{
+
+    public class ChartDataModel
+    {
+        public double Overs { get; set; }
+        public double EnglandRunScore { get; set; }
+        public double WestIndiesRunScore { get; set; }
+    }
+
+    List<ChartDataModel> ChartData = new List<ChartDataModel>
+{
+        new ChartDataModel { Overs = 16, EnglandRunScore = 2, WestIndiesRunScore = 7},
+        new ChartDataModel { Overs = 17, EnglandRunScore = 14,WestIndiesRunScore = 7 },
+        new ChartDataModel { Overs = 18, EnglandRunScore = 7, WestIndiesRunScore = 11 },
+        new ChartDataModel { Overs = 19, EnglandRunScore = 7, WestIndiesRunScore = 8 },
+        new ChartDataModel { Overs = 20, EnglandRunScore = 10, WestIndiesRunScore = 24 }
+    };
+
+}
