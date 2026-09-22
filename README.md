@@ -2,7 +2,7 @@
 
 ## Overview
 
-This sample demonstrates how to customize the numeric axis in Syncfusion Blazor Charts. The application shows how numeric-axis values can be configured to control chart presentation and data visualization behavior. The sample focuses on numeric-axis configuration techniques such as axis label formatting, range padding customization, custom interval settings, and displaying chart data based on user-defined axis ranges.
+This sample demonstrates how to customize the numeric axis in Syncfusion [Blazor Chart](https://www.syncfusion.com/blazor-components/blazor-charts). The application shows how numeric-axis values can be configured to control chart presentation and data visualization behavior. The sample focuses on numeric-axis configuration techniques such as axis label formatting, range padding customization, custom interval settings, and displaying chart data based on user-defined axis ranges.
 
 The project is implemented as a Blazor application and provides a practical reference for developers who want to customize numeric-axis behavior in Syncfusion Blazor Chart components.
 
