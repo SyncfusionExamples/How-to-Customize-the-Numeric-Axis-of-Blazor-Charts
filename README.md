@@ -19,12 +19,12 @@ The project is implemented as a Blazor application and provides a practical refe
 
 ## Prerequisites
 
-- Visual Studio 2022 or Visual Studio Code
+- Visual Studio 2026 or Visual Studio Code
 - .NET SDK compatible with the project's target framework
 
 ## How to Run the Project
 
-**Visual Studio 2022**
+**Visual Studio**
 
 1. Clone or download this repository.
 2. Open `CustomNumericAxis.sln`.
